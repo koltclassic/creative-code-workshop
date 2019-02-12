@@ -27,7 +27,7 @@ body {
   #withCode {
     position: static;
     text-align: center;
-    margin-top: -100px;
+    margin-top: -150px;
   }
   
   #allAnimations {
@@ -69,7 +69,7 @@ body {
   }
 
   #learnMoreButton {
-      margin-bottom: -50px;
+      margin-bottom: -5px;
   }
 
   #information {
@@ -79,7 +79,11 @@ body {
       flex-direction: column;
       justify-content: center;
       color: #E5FCC2;
-      padding: 0px 20%;
+      padding: 24px 15%;
+  }
+
+  #markdown {
+      padding-top: 24px;
   }
 
   #firstInfoHeader {

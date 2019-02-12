@@ -106,6 +106,9 @@ let fractalAnimation = function fractal() {
   
   tl.call(changeText, ['fractals'])
 
+  tl.to(box, .5, {
+      y: -150
+  })
     tl.to(box, .1, {
       border: "2px solid #0D8C76",
     })
@@ -163,7 +166,11 @@ master.to(box, 1, {
   autoAlpha: 0,
   ease: Bounce.easeIn
 }, "+= 0.5")
+master.to(["#header", "#topic"], 1, {
+    y: 100,
+    ease: Linear.easeNone
+  })
 master.to(["#withCode", "#learnMoreButton"], 1, {
-  y: -300,
+  y: -270,
   ease: Linear.easeNone
-})
+}, "-= 1")
