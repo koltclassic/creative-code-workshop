@@ -327,7 +327,7 @@ body { background: #010709; font-family: 'Montserrat'; }
 
 #topic { padding-top: 20px; color: #9DE0AD; font-weight: 400; }
 
-#withCode { position: static; text-align: center; margin-top: -50px; }
+#withCode { position: static; text-align: center; margin-top: -100px; }
 
 #allAnimations { height: 90vh; display: flex; justify-content: center; overflow: hidden; }
 
@@ -339,7 +339,7 @@ body { background: #010709; font-family: 'Montserrat'; }
 
 #learnMoreButton, #signUpButton { font-size: 16px; background: transparent; border: 1px solid #9DE0AD; color: #9DE0AD; border-radius: 5px; padding: 10px 20px; text-align: center; margin: 0 auto; display: block; }
 
-#learnMoreButton { margin-bottom: -5px; }
+#learnMoreButton { margin-bottom: -50px; }
 
 #information { display: none; text-align: center; vertical-align: middle; flex-direction: column; justify-content: center; color: #E5FCC2; padding: 0px 20%; }
 
