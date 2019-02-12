@@ -1,0 +1,100 @@
+/* ! normalize.css v3.0.2 | MIT License | git.io/normalize
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+body {
+    background: #010709;
+    font-family: 'Montserrat';
+  }
+  
+  #header, #topic, #withCode {
+    font-weight: 100;
+    text-align: center;
+    position: absolute;
+    color: #E5FCC2;
+  }
+  
+  #topic {
+    padding-top: 20px;
+    color: #9DE0AD;
+    font-weight: 400;
+  }
+  
+  #withCode {
+    position: static;
+    text-align: center;
+    margin-top: -50px;
+  }
+  
+  #allAnimations {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .box {
+    background: #18D0AF;
+    width: 25px;
+    height: 25px;
+    margin: 400px 10px;
+    border-radius: 50%;
+  }
+  
+  .firstBox {
+    opacity: 100;
+  }
+  
+  .newBox {
+    background: red;
+    width: 50px;
+    height: 50px;
+    margin: 50% 30px;
+  }
+  
+  #learnMoreButton, #signUpButton {
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #9DE0AD;
+    color: #9DE0AD;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    margin:0 auto;
+    display:block;
+  }
+
+  #learnMoreButton {
+      margin-bottom: -5px;
+  }
+
+  #information {
+      display: none;
+      text-align: center;
+      vertical-align: middle;
+      flex-direction: column;
+      justify-content: center;
+      color: #E5FCC2;
+      padding: 0px 20%;
+  }
+
+  #firstInfoHeader {
+    padding-top: 20px;
+  }
+
+  #information > p {
+      text-align: left;
+      line-height: 32px;
+  }
+
+  #quote {
+      text-align: left;
+      padding: 20px 0 20px 30px;
+  }
+
+  #information + span {
+      text-align: left;
+  }
+
+  h2 {
+    color: #9DE0AD;
+  }
