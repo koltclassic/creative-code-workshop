@@ -153,7 +153,7 @@ let fractalAnimation = function fractal() {
 var master = new TimelineMax();
 var box = document.querySelectorAll(".box");
 var firstBox = document.querySelectorAll(".firstBox");
-master.set(box, {
+master.set(['#learnMoreButton', box], {
   autoAlpha: 0,
 })
 master.set(firstBox, {
@@ -165,12 +165,7 @@ master.add(fractalAnimation(), "+= 1")
 master.to(box, 1, {
   autoAlpha: 0,
   ease: Bounce.easeIn
-}, "+= 0.5")
-master.to(["#header", "#topic"], 1, {
-    y: 100,
-    ease: Linear.easeNone
-  })
-master.to(["#withCode", "#learnMoreButton"], 1, {
-  y: -270,
-  ease: Linear.easeNone
-}, "-= 1")
+}, "+= 0.5");
+master.set('#learnMoreButton', {
+    autoAlpha: 100,
+});

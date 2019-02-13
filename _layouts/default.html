@@ -20,6 +20,8 @@
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="assets/css/style.css?v=79738efd08930a67041ea1c228f3ff7cadffbf98">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   </head>
 <body>
@@ -37,6 +39,7 @@
 
 <h1 id="withCode"> with code? </h1>
 <input type="button" id="learnMoreButton" value="Learn More!" onclick="showInfo()"></input>
+<a id="skipAnimation" onclick="endOfAnimation()">skip animation</a>
 
 <div id="information">
     <h1 id="markdown">Creative Coding Workshop</h1>
@@ -70,17 +73,24 @@
 </div>
 <script src="assets/js/animation.js"></script>
 <script>
-function showInfo(){
-    var allAnims = document.getElementById('allAnimations');
-    var info = document.getElementById('information');
-    var button = document.getElementById('learnMoreButton');
-    var withcode = document.getElementById('withCode');
+var allAnims = document.getElementById('allAnimations');
+var info = document.getElementById('information');
+var learnMore = document.getElementById('learnMoreButton');
+var withcode = document.getElementById('withCode');
+var skipAnimation = document.getElementById('skipAnimation')
 
+function showInfo(){
         allAnims.style.display = 'none';
         info.style.display = 'flex';
-        button.style.display = 'none';
+        learnMore.style.display = 'none';
         withcode.style.display = 'none';
+        skipAnimation.style.display = 'none';
 }
+
+function endOfAnimation() {
+  master.progress(1, false);
+}
+
 
 </script>
 </body>

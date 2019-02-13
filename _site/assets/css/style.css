@@ -321,13 +321,17 @@ a:hover { text-decoration: underline; }
 
 /* ! normalize.css v3.0.2 | MIT License | git.io/normalize
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
-body { background: #010709; font-family: 'Montserrat'; }
+body { background: #010709; font-family: 'Montserrat'; text-align: center; }
+
+h1, h2, h3 { font-family: 'Josefin Sans', sans-serif; }
 
 #header, #topic, #withCode { font-weight: 100; text-align: center; position: absolute; color: #E5FCC2; }
 
 #topic { padding-top: 20px; color: #9DE0AD; font-weight: 400; }
 
-#withCode { position: static; text-align: center; margin-top: -150px; }
+#withCode { position: static; text-align: center; margin-top: -70px; }
+
+#skipAnimation { color: #9DE0AD; font-size: 12px; }
 
 #allAnimations { height: 90vh; display: flex; justify-content: center; overflow: hidden; }
 
@@ -337,7 +341,11 @@ body { background: #010709; font-family: 'Montserrat'; }
 
 .newBox { background: red; width: 50px; height: 50px; margin: 50% 30px; }
 
-#learnMoreButton, #signUpButton { font-size: 16px; background: transparent; border: 1px solid #9DE0AD; color: #9DE0AD; border-radius: 5px; padding: 10px 20px; text-align: center; margin: 0 auto; display: block; }
+#learnMoreButton, #signUpButton { font-size: 16px; background: transparent; border: 1px solid #9DE0AD; color: #9DE0AD; border-radius: 5px; padding: 10px 20px; }
+
+#signUpButton { text-align: center; margin: 0 auto; display: block; }
+
+#learnMoreButton { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 #learnMoreButton { margin-bottom: -5px; }
 

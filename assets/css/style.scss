@@ -9,6 +9,11 @@
 body {
     background: #010709;
     font-family: 'Montserrat';
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   #header, #topic, #withCode {
@@ -27,8 +32,13 @@ body {
   #withCode {
     position: static;
     text-align: center;
-    margin-top: -150px;
-  }
+    margin-top: -70px;
+}
+
+    #skipAnimation {
+    color: #9DE0AD;
+    font-size: 12px;
+    }
   
   #allAnimations {
     height: 90vh;
@@ -63,9 +73,19 @@ body {
     color: #9DE0AD;
     border-radius: 5px;
     padding: 10px 20px;
+  }
+
+  #signUpButton {
     text-align: center;
     margin:0 auto;
     display:block;
+  }
+
+  #learnMoreButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #learnMoreButton {
