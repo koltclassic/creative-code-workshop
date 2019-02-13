@@ -333,7 +333,7 @@ h1, h2, h3 { font-family: 'Josefin Sans', sans-serif; }
 
 #skipAnimation { color: #9DE0AD; font-size: 12px; }
 
-#allAnimations { height: 90vh; display: flex; justify-content: center; overflow: hidden; }
+#allAnimations { height: 88vh; display: flex; justify-content: center; overflow: hidden; }
 
 .box { background: #18D0AF; width: 25px; height: 25px; margin: 400px 10px; border-radius: 50%; }
 
