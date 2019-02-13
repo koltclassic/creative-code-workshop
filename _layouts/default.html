@@ -39,7 +39,7 @@
 
 <h1 id="withCode"> with code? </h1>
 <input type="button" id="learnMoreButton" value="Learn More!" onclick="showInfo()"></input>
-<a id="skipAnimation" onclick="endOfAnimation()">skip animation</a>
+<p id="skipAnimation" onclick="endAnimationAndShowInfo()">skip animation</p>
 
 <div id="information">
     <h1 id="markdown">Creative Coding Workshop</h1>
@@ -78,6 +78,11 @@ var info = document.getElementById('information');
 var learnMore = document.getElementById('learnMoreButton');
 var withcode = document.getElementById('withCode');
 var skipAnimation = document.getElementById('skipAnimation')
+
+function endAnimationAndShowInfo() {
+  endOfAnimation();
+  showInfo();
+}
 
 function showInfo(){
         allAnims.style.display = 'none';

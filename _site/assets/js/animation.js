@@ -164,6 +164,7 @@ master.add(flocking());
 master.add(fractalAnimation(), "+= 1")
 master.to(box, 1, {
   autoAlpha: 0,
+  display: 'none',
   ease: Bounce.easeIn
 }, "+= 0.5");
 master.set('#learnMoreButton', {
